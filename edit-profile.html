@@ -31,6 +31,11 @@
     </div>
   </nav>
    <main class="edit-profile">
+     <header class="edit-profile__header">
+     <img src="images/avatar.jpg"  />
+     <h3 class="edit-profile__title">serranoarevalo</h3>
+   </header>
+
       <form classe="form">
         <div class="form__row">
           <label for="name" class="form__name">Name</label>
@@ -58,7 +63,12 @@
         </div>
         <div class="form__row">
           <label for="gender" class="form__gemder">Gender</label>
-          <input id="gender" type="Male or Female">
+          <select>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="not specified">Not Specified</option>
+
+</select>
         </div>
         <div class="form__row">
           <label for="similar account suggestions" class="form__similar account suggestions">Similar Account Suggestions</label>
