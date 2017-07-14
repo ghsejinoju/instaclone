@@ -63,7 +63,7 @@
         </div>
         <div class="form__row">
           <label for="gender" class="form__gemder">Gender</label>
-          <select>
+          <select id="gender">
   <option value="male">Male</option>
   <option value="female">Female</option>
   <option value="not specified">Not Specified</option>
@@ -71,9 +71,13 @@
 </select>
         </div>
         <div class="form__row">
-          <label for="similar account suggestions" class="form__similar account suggestions">Similar Account Suggestions</label>
-          <input id="similar account suggestions"
+          <span for="similar" class="form__similar account suggestions">Similar Account Suggestions</label>
+          <input id="similar" type="checkbox"
+              <label for="similar" class="form__outside-label">Include your account when 
+        </div>
 
+        <div class="form__row">
+          <input type="submit">
         </div>
       </form>
 
