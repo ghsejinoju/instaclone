@@ -12,30 +12,38 @@
       margin: 0;
     }
 
-    .box {
+    .father {
       width: 100%;
-      height: 600px;
       background-color: red;
-      padding: 30px;
-      box-sizing: border-box;
+      height: 600px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    #one {
+      align-self: flex-start;
+    }
+
+    #three {
+      align-self: flex-end;
     }
 
     .child {
-      width: 100px;
-      height: 100px;
+      width: 27.8%;
+      height: 200px;
       background-color: yellow;
-      border: 10px solid green;
-      display: inline-block;
+      border: 5px solid green;
     }
   </style>
 
 </head>
 
 <body>
-  <div class="box">
+  <div class="father">
+    <div class="child" id="one"></div>
     <div class="child"></div>
-    <div class="child"></div>
-    <div class="child"></div>
+    <div class="child" id="three"></div>
   </div>
 </body>
 
