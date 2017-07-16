@@ -16,6 +16,27 @@
 .navigation__link {
   color: #262626;
   margin-right: 10px;
+  display: inline-block;
+}
+
+#compass{
+  animation: .3s menulink linear;
+}
+#heart{
+  animation: .5s menulink linear;
+}
+#user{
+  animation: .7s menulink linear;
+}
+@keyframes menulink {
+  from{
+    opacity: 0;
+    transform:  translateY(-10px);
+  }
+  to{
+opacity:1;
+transform: none;
+  }
 }
 
 .navigation__input {
